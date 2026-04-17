@@ -33,11 +33,10 @@ export function getSortedPostsData(folder: string): PostDetails[] {
 
       return {
         slug,
-        title: matterResult.data.title,
-        date: matterResult.data.date,
-        image: matterResult.data.image,
-        excerpt: matterResult.data.excerpt,
-        ...(matterResult.data as { title: string; date: string; image: string; excerpt: string })
+        title: matterResult.data.title as string,
+        date: matterResult.data.date as string,
+        image: matterResult.data.image as string,
+        excerpt: matterResult.data.excerpt as string,
       };
     });
 

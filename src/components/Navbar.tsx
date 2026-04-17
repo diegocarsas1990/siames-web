@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { FiMenu as Menu, FiX as X } from "react-icons/fi";
 import { useState } from "react";
 
 export default function Navbar() {

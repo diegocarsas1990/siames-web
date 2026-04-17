@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram } from "lucide-react";
+import { FiInstagram as Instagram } from "react-icons/fi";
 
 export default function Footer() {
   return (

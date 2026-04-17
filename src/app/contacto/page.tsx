@@ -1,6 +1,6 @@
 "use client";
 
-import { Instagram, Mail, MapPin } from "lucide-react";
+import { FiInstagram as Instagram, FiMail as Mail, FiMapPin as MapPin } from "react-icons/fi";
 import { useState } from "react";
 
 export default function Contacto() {

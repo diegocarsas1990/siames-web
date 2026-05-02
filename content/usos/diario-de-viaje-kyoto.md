@@ -1,7 +1,7 @@
 ---
 title: 'Diario de Viaje en Kyoto'
 date: '2023-10-15'
-image: 'https://images.unsplash.com/photo-1522881113591-b360b36509c5?auto=format&fit=crop&q=80'
+image: '/imagenes/DSCF4767.JPG'
 excerpt: 'Descubre cómo Ana documentó su viaje por Japón utilizando el cuaderno formato Pocket.'
 ---
 

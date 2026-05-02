@@ -18,7 +18,7 @@ export default function Footer() {
             Contacto
           </Link>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/siamesbooks"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-white transition-colors"

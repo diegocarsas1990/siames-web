@@ -15,7 +15,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-6 tracking-wide drop-shadow-md">
-            SIAMES
+            siamés
           </h1>
           <p className="text-lg md:text-2xl mb-10 max-w-2xl font-light tracking-wide text-background/90 drop-shadow">
             El arte de escribir a mano. Cuadernos artesanales de calidad premium diseñados en la Ciudad de México.
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="w-full md:w-1/2">
             <h2 className="font-serif text-3xl md:text-4xl mb-6 text-foreground">El tacto perfecto</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              En Siames creemos que cada idea merece un lugar especial. Utilizamos materiales de primera calidad y texturas que invitan a plasmar tus pensamientos. Nuestra encuadernación artesanal asegura que tu cuaderno te acompañe durante toda la vida.
+              En siamés creemos que cada idea merece un lugar especial. Utilizamos materiales de primera calidad y texturas que invitan a plasmar tus pensamientos. Nuestra encuadernación artesanal asegura que tu cuaderno te acompañe durante toda la vida.
             </p>
             <Link 
               href="/quienes-somos" 
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 aspect-square relative bg-muted flex items-center justify-center p-8 overflow-hidden group">
             <img 
-              src="https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?auto=format&fit=crop&q=80" 
+              src="/imagenes/DSCF4789.JPG" 
               alt="Cuaderno abierto" 
               className="object-cover w-full h-full shadow-xl transition-transform duration-700 group-hover:scale-105"
             />

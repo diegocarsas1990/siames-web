@@ -34,25 +34,25 @@ export default function Contacto() {
   return (
     <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex-grow w-full">
       <div className="text-center mb-16">
-        <h1 className="font-serif text-5xl mb-6">contacto</h1>
+        <h1 className="font-serif text-5xl mb-6">Contacto</h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          ¿tienes alguna pregunta sobre nuestros cuadernos, ventas corporativas o pedidos especiales? escríbenos.
+          ¿Tienes alguna pregunta sobre nuestros cuadernos, ventas corporativas o pedidos especiales? Escríbenos.
         </p>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-16 max-w-5xl mx-auto">
         <div className="w-full lg:w-1/3 space-y-10">
           <div>
-            <h3 className="tracking-widest text-xs font-semibold text-foreground mb-4">redes sociales</h3>
+            <h3 className="tracking-widest text-xs font-semibold text-foreground mb-4 uppercase">Redes Sociales</h3>
             <a 
-              href="https://instagram.com/siamesbooks" 
+              href="https://www.instagram.com/siamesbooks" 
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-4 text-muted-foreground hover:text-accent transition-colors group"
             >
               <img 
                 src="/imagenes/perfil-instagram.jpg" 
-                alt="instagram perfil" 
+                alt="Instagram perfil" 
                 className="w-10 h-10 rounded-full object-cover transition-transform group-hover:scale-110" 
               />
               <span>@siamesbooks</span>
@@ -60,7 +60,7 @@ export default function Contacto() {
           </div>
           
           <div>
-            <h3 className="tracking-widest text-xs font-semibold text-foreground mb-4">email</h3>
+            <h3 className="tracking-widest text-xs font-semibold text-foreground mb-4 uppercase">Email</h3>
             <a 
               href="mailto:holasiames@gmail.com" 
               className="inline-flex items-center gap-3 text-muted-foreground hover:text-accent transition-colors"
@@ -71,10 +71,10 @@ export default function Contacto() {
           </div>
 
           <div>
-            <h3 className="tracking-widest text-xs font-semibold text-foreground mb-4">taller (previa cita)</h3>
+            <h3 className="tracking-widest text-xs font-semibold text-foreground mb-4 uppercase">Taller (previa cita)</h3>
             <div className="flex items-start gap-3 text-muted-foreground">
               <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-              <span>ciudad de méxico, cdmx<br/>cp 06700</span>
+              <span>Ciudad de México, CDMX<br/>CP 06700</span>
             </div>
           </div>
         </div>
@@ -92,18 +92,18 @@ export default function Contacto() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label htmlFor="name" className="text-sm font-medium">nombre</label>
+                <label htmlFor="name" className="text-sm font-medium">Nombre</label>
                 <input 
                   type="text" 
                   name="name" 
                   id="name" 
                   required
                   className="w-full border border-muted bg-background px-4 py-3 focus:outline-none focus:border-foreground transition-colors"
-                  placeholder="tu nombre"
+                  placeholder="Tu nombre"
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-medium">correo electrónico</label>
+                <label htmlFor="email" className="text-sm font-medium">Correo Electrónico</label>
                 <input 
                   type="email" 
                   name="email" 
@@ -116,30 +116,30 @@ export default function Contacto() {
             </div>
             
             <div className="space-y-2">
-              <label htmlFor="message" className="text-sm font-medium">mensaje</label>
+              <label htmlFor="message" className="text-sm font-medium">Mensaje</label>
               <textarea 
                 name="message" 
                 id="message" 
                 rows={5}
                 required
                 className="w-full border border-muted bg-background px-4 py-3 focus:outline-none focus:border-foreground transition-colors resize-none"
-                placeholder="¿en qué te podemos ayudar?"
+                placeholder="¿En qué te podemos ayudar?"
               ></textarea>
             </div>
 
             <button 
               type="submit" 
               disabled={status === "submitting" || status === "success"}
-              className="w-full bg-foreground text-background py-4 tracking-widest text-sm font-medium hover:bg-muted-foreground transition-colors disabled:opacity-50"
+              className="w-full bg-foreground text-background py-4 tracking-widest text-sm font-medium hover:bg-muted-foreground transition-colors disabled:opacity-50 uppercase"
             >
-              {status === "submitting" ? "enviando..." : status === "success" ? "mensaje enviado" : "enviarnos mensaje"}
+              {status === "submitting" ? "Enviando..." : status === "success" ? "Mensaje Enviado" : "Enviarnos Mensaje"}
             </button>
             
             {status === "success" && (
-              <p className="text-green-600 text-sm text-center">¡gracias por contactarnos! por favor valida tu correo si es la primera vez que envías un mensaje.</p>
+              <p className="text-green-600 text-sm text-center">¡Gracias por contactarnos! Por favor valida tu correo si es la primera vez que envías un mensaje.</p>
             )}
             {status === "error" && (
-              <p className="text-red-600 text-sm text-center">hubo un error al enviar el mensaje. por favor intenta de nuevo.</p>
+              <p className="text-red-600 text-sm text-center">Hubo un error al enviar el mensaje. Por favor intenta de nuevo.</p>
             )}
           </form>
         </div>

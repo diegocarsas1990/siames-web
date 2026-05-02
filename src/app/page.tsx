@@ -8,7 +8,7 @@ export default function Home() {
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-foreground text-background">
         <div className="absolute inset-0 z-0 opacity-40">
           <img
-            src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80"
+            src="/imagenes/DSCF4797.JPG"
             alt="Textura de cuaderno de piel"
             className="w-full h-full object-cover"
           />
